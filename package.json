@@ -13,7 +13,11 @@
     "@emotion/styled": "^11.10.5",
     "@fullcalendar/core": "^6.1.4",
     "@fullcalendar/daygrid": "^6.1.4",
-    "@fullcalendar/react": "^6.1.4",
+    "@fullcalendar/interaction": "^6.1.4",
+    "@fullcalendar/list": "^6.1.4",
+    "@fullcalendar/react": "^5.11.4",
+    "@fullcalendar/timegrid": "^6.1.4",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.8",
     "@mui/x-data-grid": "^5.17.23",
     "@nivo/bar": "^0.80.0",
@@ -28,6 +32,7 @@
     "react-nprogress": "^0.1.6",
     "react-pro-sidebar": "^1.0.0",
     "react-router-dom": "^6.8.1",
+    "sass": "^1.58.0",
     "yup": "^1.0.0"
   },
   "devDependencies": {
