@@ -6,7 +6,6 @@ import { routes as r } from '../../router';
 import { links } from "../../router";
 import { Topbar } from "../../scenes/global/Topbar";
 import { Sidebar } from "../../scenes/global/Sidebar";
-import './style.scss';
 
 
 const MainPage = () => {
