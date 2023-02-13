@@ -3,13 +3,6 @@ import NProgress from 'nprogress';
 import { Box, CircularProgress } from '@mui/material';
 
 const SuspenseLoader = () => {
-	useEffect(() => {
-		NProgress.start();
-
-		return () => {
-			NProgress.done();
-		}
-	}, [])
 
 	return (
 		<Box

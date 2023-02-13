@@ -7,13 +7,13 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { tokens } from "../../theme";
 
 const FAQ = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
-  return (
-    <Box m="20px">
-     
-    </Box>
-  );
+	const theme = useTheme();
+	const colors = tokens(theme.palette.mode);
+	return (
+		<Box m="20px">
+
+		</Box>
+	);
 };
 
 export default FAQ;

@@ -3,7 +3,7 @@ import { createTheme, Theme, ThemeOptions } from "@mui/material/styles";
 import { DefaultTheme } from "@mui/private-theming";
 
 // color design tokens
-export const tokens = (mode) => ({
+export const tokens = (mode: string) => ({
 	...(mode === 'dark'
 		? {
 			grey: {
@@ -21,7 +21,7 @@ export const tokens = (mode) => ({
 				100: "#d0d1d5",
 				200: "#a1a4aa",
 				300: "#727680",
-				400: "#434955",
+				400: "#1F2A40",
 				500: "#141b2b",
 				600: "#101622",
 				700: "#0c101a",
@@ -124,9 +124,53 @@ export const tokens = (mode) => ({
 
 });
 
+interface PalletM {
+	palette: {
+		primary: {
+			main: string;
+		};
+		secondary: {
+			main: string;
+		};
+		neutral: {
+			dark: string;
+			main: string;
+			light: string;
+		};
+		background: {
+			default: string;
+		};
+		fontFamily: string;
+		fontSize: number;
+		h1: {
+			fontFamily: string;
+			fontSize: number;
+		};
+		h2: {
+			fontFamily: string;
+			fontSize: number;
+		};
+		h3: {
+			fontFamily: string;
+			fontSize: number;
+		};
+		h4: {
+			fontFamily: string;
+			fontSize: number;
+		};
+		h5: {
+			fontFamily: string;
+			fontSize: number;
+		};
+		h6: {
+			fontFamily: string;
+			fontSize: number;
+		};
+	};
+}
 //mui theme settings
 
-export const themeSettings = (mode) => {
+export const themeSettings = (mode: string) => {
 	const colors = tokens(mode);
 
 	return {

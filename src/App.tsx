@@ -1,10 +1,8 @@
-import { useRoutes } from "react-router-dom";
-import { routes as r } from './router';
 import { ColorModeContext, useMode } from './theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
+import { MainPage } from "./router";
 
 function App() {
-	const routes = useRoutes(r);
 	const [theme, colorMode] = useMode();
 
 	return (
@@ -12,11 +10,10 @@ function App() {
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<div className='app'>
-					{routes}
+					<MainPage />
 				</div>
 			</ThemeProvider>
 		</ColorModeContext.Provider>
-
 	)
 }
 
