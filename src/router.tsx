@@ -1,5 +1,5 @@
 import { Component, lazy, Suspense } from "react"
-import SuspenseLoader from "./components/suspenseLoader";
+import SuspenseLoader from "./components/suspenseLoader/SuspenseLoader";
 
 
 const Loader = (Component: any) => (props: any) =>
