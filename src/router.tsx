@@ -1,5 +1,5 @@
 import { Component, lazy, Suspense } from "react"
-import SuspenseLoader from "./components/suspenseLoader/SuspenseLoader";
+import SuspenseLoader from "./components/SuspenseLoader/SuspenseLoader";
 
 
 const Loader = (Component: any) => (props: any) =>
@@ -9,7 +9,7 @@ const Loader = (Component: any) => (props: any) =>
 	</Suspense>
 );
 
-export const MainPage = Loader(lazy(() => import('./components/mainPage/MainPage')));
+export const MainPage = Loader(lazy(() => import('./components/MainPage/MainPage')));
 const Dashboard = Loader(lazy(() => import('./scenes/dashboard/index')));
 const Team = Loader(lazy(() => import('./scenes/team/index')));
 const Contacts = Loader(lazy(() => import('./scenes/contacts/index')));

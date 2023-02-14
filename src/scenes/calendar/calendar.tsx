@@ -14,7 +14,7 @@ import {
 	useTheme,
 } from "@mui/material";
 import { tokens } from "../../theme";
-import Header from "../../components/header/Header";
+import Header from "../../components/Header/Header";
 
 type AddEventProps = {
 	id: string
